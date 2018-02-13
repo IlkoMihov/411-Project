@@ -1,0 +1,8 @@
+Ricardo Ballesteros
+Joseph Caluag
+Collen Kim
+Ilko Mihov
+
+Idea 1:
+Using the Eventful API our app will extract all the dates and times of upcoming concerts in your area. 
+We'll then add the selected concerts to your Google calendar, and finally create a playlist with the artists' top songs.
