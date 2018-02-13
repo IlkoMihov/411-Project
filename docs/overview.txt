@@ -4,5 +4,4 @@ Collen Kim
 Ilko Mihov
 
 Idea 1:
-Using the Eventful API our app will extract all the dates and times of upcoming concerts in your area. 
-We'll then add the selected concerts to your Google calendar, and finally create a playlist with the artists' top songs.
+We will be using the Eventful API, Spotify API, and Google Calendar API to create a web app that connects you with upcoming performing artists. In this app, users will login and view the upcoming concerts in a selected area using the Eventful API. They will be given the option to add specific concerts to their Google Calendar, and will show if there are any conflicts. Finally, using the Spotify API, the app will generate a playlist with the top songs of the artists that the user had selected. The database will contain the login information, and authentication for Google Calendar and Spotify will be required. 
