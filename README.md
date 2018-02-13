@@ -1,6 +1,6 @@
-Ricardo Ballesteros
-Joseph Caluag
-Collen Kim
-Ilko Mihov
-
+Ricardo Ballesteros<br />
+Joseph Caluag<br />
+Collen Kim<br />
+Ilko Mihov<br />
+<br />
 CS 411 Project
