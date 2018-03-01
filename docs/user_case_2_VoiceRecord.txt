@@ -1,0 +1,60 @@
+User Story 2: Record Voice
+--------------------------------------------------------------
+|-What the user will do:
+ 1. From a list of friends who play the game, user will select
+a friend to send a voice recording to.
+ 2. User will then record a small snippet from a song the game
+will generate based on the user's Spotify playlists and the
+selected friend's Spotify playlists.
+ 3. If user is satisfied, user will "send" to friend and
+friend will receive a notification.
+
+|-What happens when everything goes right:
+ 1.1 User needs to be able to see a list of friends who play
+the game as well.
+ 1.2 If user selects a friend, then the game will be able to
+get Spotify playlists from both the user and the friend, and
+from a list of songs both users have in their playlists,
+randomly select a song and segment from the song.
+ 2.1 The game will use the user's computer's microphone to
+record the user
+ 2.2 The game will temporarily save the recording so that the
+user can listen to the recording to make sure they are
+satisfied
+ 3. The game will send a notification to the friend reporting
+the user's name, and the voice recording. A link will be
+included that leads to the game website for the friend to
+click on and respond to.
+
+|-What to do if something goes wrong:
+ 1.1 If user does not have any friends who play the game, tell
+the user they do not have any friends who play the game but
+that they can invite friends using a link.
+ 1.2.1 If the game is unable to get a list of songs both the
+user and friend listen to based on their Spotify playlists,
+then tell the user that there are no common songs between their
+Spotify playlists, and offer the options to randomly choose a
+song from either the user's playlist, the friend's playlist, or
+a randomly generated song (from one of Spotify's pop playlists)
+ 1.2.2 If the game is unable to get a list of songs because the
+user does not have any playlists, then tell the user that they
+do not have any playlists, and offer the options to randomly
+choose a song from the friend's playlist or a randomly generated
+song from one of Spotify's pop playlists
+ 1.2.3 If the game is unable to get a list of songs because the
+friend does not have any playlists, then tell the user that they
+do not have any playlists, and offer the options to randomly
+choose a song from the user's playlist or a randomly generated
+song from one of Spotify's pop playlists
+ 2.1 If the game cannot access the computer's microphone, ask
+the user to give the game acess to the computer's microphone
+ 2.2.1 If the game cannot save the recording or the recording is
+lost, ask the user to record again.
+ 2.2.2 If the user is not satisfied with the recording, give an
+option to redo the recording.
+ 3.1 If the game cannot send a notification to the friend because
+of a network disconnection, then tell the user that the game is
+disconnected, and to reconnect.
+ 3.2 If the game cannot send a notification to the friend because
+there is no "address" for the friend, notify the user and ask the
+user to make sure that the friend has a verified account.
