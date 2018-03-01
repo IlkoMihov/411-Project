@@ -1,0 +1,23 @@
+User Story 1: User Registration
+--------------------------------------------------------------
+|-What the user will do:
+User will register with game through Facebook verification and
+link game account with Spotify account.
+
+|-What happens when everything goes right:
+User will have an account with the game, linked to the user's
+Facebook account for access to the user's friends, and to the
+user's Spotify account for access to the user's playlists.
+The user will be able to see statistics such as who they have
+played with, who from their Facebook friends list plays, and
+their own high score. User can also send invites to friends.
+
+|-What to do if something goes wrong:
+ -If the user cannot make an account, check to see that the
+user has a verified Facebook account and Spotify account.
+ -If user does not see a list of friends who play, then
+provide an option to invite friends
+ -If user does not have a Spotify account, ask user to make a
+Spotify account
+ -If user does not have a Facebook account, ask user to make
+a Facebook account
