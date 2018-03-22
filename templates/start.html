@@ -1,0 +1,36 @@
+<!doctype html>
+<head>
+<title>Twitter Game</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static',
+  filename='style.css') }}">
+
+
+<nav>
+<a href="{{ url_for('logout') }}">Sign Out</a>
+
+</nav>
+</head>
+
+<body>
+<div class="quiz-body">
+<h1>Welcome, @{{g.user.screen_name}}</h1>
+<p>Who said:<br><br>
+    "{{ chosen_tweet }}"</p>
+<table class="choices">
+<tr>
+{% for image in profile_pictures %}
+   <td><img src="{{ image }}" height="150px"></td>
+{% endfor %}
+</tr>
+<td>A</td>
+<td>B</td>
+<td>C</td>
+<td>D</td>
+</table>
+
+<p>It was @{{ correct_answer }}!</p>
+</div>
+
+
+</body>
+</html>
