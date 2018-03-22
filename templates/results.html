@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel=stylesheet type=text/css href="{{ url_for('static',
+  filename='style.css') }}">
+
+</head>
+<body>
+<h1>You scored {{ number_of_correct_answers }} out of {{ number_of_questions }}</h1>
+<h1> Question 1</h1>
+<p>You answered <img src="{{ one_your_answer }}"></p>
+<p>The correct answer is <img src="{{ one_correct_answer }}"></p>
+<h1> Question 2</h1>
+<p>You answered <img src="{{ two_your_answer }}"></p>
+<p>The correct answer is <img src="{{ two_correct_answer }}"></p>
+<h1> Question 3</h1>
+<p>You answered <img src="{{ three_your_answer }}"></p>
+<p>The correct answer is <img src="{{ three_correct_answer }}"></p>
+</body>
+</html>

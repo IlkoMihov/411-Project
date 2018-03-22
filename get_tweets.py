@@ -7,7 +7,7 @@ consumer_secret = "PYybNMYCabLM1xySQMsuhwvdY3nLaMBzGumgfXZCAjw4kpjy1V"
 access_key = "734984182288384001-7TodXT4R3PwOaCDG2kajlZjrLYNtbZW"
 access_secret = "W7AnyHp0e8RoomuFrMxSO7xafFziLMf0XCuWwzBnxjt0r"
 
-class twitterInfo():
+class getTweet():
     def __init__(self, user):
         self.user = user
 

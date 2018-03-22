@@ -1,0 +1,67 @@
+<!doctype html>
+<head>
+    <title>Twitter Game</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static',
+  filename='style.css') }}">
+
+
+    <nav>
+        <a href="{{ url_for('logout') }}">Sign Out</a>
+
+    </nav>
+</head>
+
+<body>
+<div class="quiz-body">
+    <form action="/results" method="post">
+        <h1>Welcome, @{{ g.user.screen_name }}</h1>
+        <table class="choices">
+            <!-- Question 1 -->
+            <p>Who said:<br><br>
+                "{{ one_tweet }}"</p>
+            <tr>
+                {% for img in one_img %}
+                    <td><img src="{{ img }}"></td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for user in one_users %}
+                <td>{{ user }}<br><input type="radio" name="one_answer" value="{{ user }}" id="{{ user }}"></td>
+                    {% endfor %}
+            </tr>
+        </table>
+            <!-- Question 2 -->
+        <table class="choices">
+            <p>Who said:<br><br>
+                "{{ two_tweet }}"</p>
+            <tr>
+                {% for img in two_img %}
+                    <td><img src="{{ img }}" height="150px"></td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for user in two_users %}
+                <td>{{ user }}<br><input type="radio" name="two_answer" value="{{ user }}" id="{{ user }}"></td>
+                    {% endfor %}
+            </tr>
+        </table>
+            <!-- Question 3 -->
+        <table class="choices">
+            <p>Who said:<br><br>
+                "{{ three_tweet }}"</p>
+            <tr>
+                {% for img in three_img %}
+                    <td><img src="{{ img }}" height="150px"></td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for user in three_users %}
+                <td>{{ user }}<br><input type="radio" name="three_answer" value="{{ user }}" id="{{ user }}"></td>
+                    {% endfor %}
+            </tr>
+        </table>        <input type="submit">
+    </form>
+</div>
+
+</body>
+</html>
