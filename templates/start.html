@@ -15,8 +15,12 @@
 <div class="quiz-body">
     <form action="/results" method="post">
         <h1>Welcome, @{{ g.user.screen_name }}</h1>
+
+        <div class="block">
+ <h1>Question 1</h1>
         <table class="choices">
             <!-- Question 1 -->
+
             <p>Who said:<br><br>
                 "{{ one_tweet }}"</p>
             <tr>
@@ -26,11 +30,14 @@
             </tr>
             <tr>
                 {% for user in one_users %}
-                <td>{{ user }}<br><input type="radio" name="one_answer" value="{{ user }}" id="{{ user }}"></td>
+                <td>{{ user }}<br><input required type="radio" name="one_answer" value="{{ user }}" id="{{ user }}"></td>
                     {% endfor %}
             </tr>
         </table>
+    </div>
             <!-- Question 2 -->
+
+    <div class="block"><h1>Question 2</h1>
         <table class="choices">
             <p>Who said:<br><br>
                 "{{ two_tweet }}"</p>
@@ -41,11 +48,14 @@
             </tr>
             <tr>
                 {% for user in two_users %}
-                <td>{{ user }}<br><input type="radio" name="two_answer" value="{{ user }}" id="{{ user }}"></td>
+                <td>{{ user }}<br><input required type="radio" name="two_answer" value="{{ user }}" id="{{ user }}"></td>
                     {% endfor %}
             </tr>
         </table>
+    </div>
             <!-- Question 3 -->
+
+    <div class="block">  <h1>Question 3</h1>
         <table class="choices">
             <p>Who said:<br><br>
                 "{{ three_tweet }}"</p>
@@ -56,10 +66,149 @@
             </tr>
             <tr>
                 {% for user in three_users %}
-                <td>{{ user }}<br><input type="radio" name="three_answer" value="{{ user }}" id="{{ user }}"></td>
+                <td>{{ user }}<br><input required  type="radio" name="three_answer" value="{{ user }}" id="{{ user }}"></td>
                     {% endfor %}
             </tr>
-        </table>        <input type="submit">
+        </table>
+    </div>
+
+            <!-- Question 4 -->
+
+    <div class="block">  <h1>Question 4</h1>
+        <table class="choices">
+            <p>Who said:<br><br>
+                "{{four_tweet }}"</p>
+            <tr>
+                {% for img in four_img %}
+                    <td><img src="{{ img }}" height="150px"></td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for user in four_users %}
+                <td>{{ user }}<br><input required  type="radio" name="four_answer" value="{{ user }}" id="{{ user }}"></td>
+                    {% endfor %}
+            </tr>
+        </table>
+    </div>
+
+                <!-- Question 5 -->
+
+    <div class="block">  <h1>Question 5</h1>
+        <table class="choices">
+            <p>Who said:<br><br>
+                "{{ five_tweet }}"</p>
+            <tr>
+                {% for img in five_img %}
+                    <td><img src="{{ img }}" height="150px"></td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for user in five_users %}
+                <td>{{ user }}<br><input required  type="radio" name="five_answer" value="{{ user }}" id="{{ user }}"></td>
+                    {% endfor %}
+            </tr>
+        </table>
+    </div>
+
+                <!-- Question 6 -->
+
+    <div class="block">    <h1>Question 6</h1>
+        <table class="choices">
+            <p>Who said:<br><br>
+                "{{ six_tweet }}"</p>
+            <tr>
+                {% for img in six_img %}
+                    <td><img src="{{ img }}" height="150px"></td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for user in six_users %}
+                <td>{{ user }}<br><input required  type="radio" name="six_answer" value="{{ user }}" id="{{ user }}"></td>
+                    {% endfor %}
+            </tr>
+        </table>
+    </div>
+
+                <!-- Question 7 -->
+
+    <div class="block">    <h1>Question 7</h1>
+        <table class="choices">
+            <p>Who said:<br><br>
+                "{{ seven_tweet }}"</p>
+            <tr>
+                {% for img in seven_img %}
+                    <td><img src="{{ img }}" height="150px"></td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for user in seven_users %}
+                <td>{{ user }}<br><input required  type="radio" name="seven_answer" value="{{ user }}" id="{{ user }}"></td>
+                    {% endfor %}
+            </tr>
+        </table>
+    </div>
+
+                <!-- Question 8 -->
+
+    <div class="block"><h1>Question 8</h1>
+        <table class="choices">
+            <p>Who said:<br><br>
+                "{{ eight_tweet }}"</p>
+            <tr>
+                {% for img in eight_img %}
+                    <td><img src="{{ img }}" height="150px"></td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for user in eight_users %}
+                <td>{{ user }}<br><input required  type="radio" name="eight_answer" value="{{ user }}" id="{{ user }}"></td>
+                    {% endfor %}
+            </tr>
+        </table>
+    </div>
+
+                <!-- Question 9 -->
+
+    <div class="block">  <h1>Question 9</h1>
+        <table class="choices">
+            <p>Who said:<br><br>
+                "{{ nine_tweet }}"</p>
+            <tr>
+                {% for img in nine_img %}
+                    <td><img src="{{ img }}" height="150px"></td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for user in nine_users %}
+                <td>{{ user }}<br><input required  type="radio" name="nine_answer" value="{{ user }}" id="{{ user }}"></td>
+                    {% endfor %}
+            </tr>
+        </table>
+    </div>
+
+                <!-- Question 10 -->
+
+    <div class="block"> <h1>Question 10</h1>
+        <table class="choices">
+            <p>Who said:<br><br>
+                "{{ ten_tweet }}"</p>
+            <tr>
+                {% for img in ten_img %}
+                    <td><img src="{{ img }}" height="150px"></td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for user in ten_users %}
+                <td>{{ user }}<br><input required  type="radio" name="ten_answer" value="{{ user }}" id="{{ user }}"></td>
+                    {% endfor %}
+            </tr>
+        </table>
+    </div>
+
+
+
+    <!-- Submit answers -->
+    <input type="submit" class="button submit">
     </form>
 </div>
 
