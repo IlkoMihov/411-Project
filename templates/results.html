@@ -4,17 +4,108 @@
     <link rel=stylesheet type=text/css href="{{ url_for('static',
   filename='style.css') }}">
 
+
+  <nav>
+        <a href="{{ url_for('logout') }}">Sign Out</a>
+
+    </nav>
 </head>
+
+
 <body>
-<h1>You scored {{ number_of_correct_answers }} out of {{ number_of_questions }}</h1>
+
+<h1>You scored {{ number_of_correct_answers }} out of {{ number_of_questions }}.</h1>
+<h2>{{ results_msg }}</h2>
+<a href={{url_for('index') }} class = 'try-again'> Try Again </a>
+
+
+<div class="block">
 <h1> Question 1</h1>
-<p>You answered <img src="{{ one_your_answer }}"></p>
-<p>The correct answer is <img src="{{ one_correct_answer }}"></p>
+<p>"{{ one_tweet }}"</p>
+<p>You answered<br> <img src="{{ one_your_answer }}"></p>
+<p>The correct answer is <br><img src="{{ one_correct_answer }}"></p>
+    </div>
+<div class="block">
 <h1> Question 2</h1>
-<p>You answered <img src="{{ two_your_answer }}"></p>
-<p>The correct answer is <img src="{{ two_correct_answer }}"></p>
+<p>"{{ two_tweet }}"</p>
+<p>You answered <br><img src="{{ two_your_answer }}"></p>
+<p>The correct answer is <br><img src="{{ two_correct_answer }}"></p>
+</div>
+    <div class="block">
+
 <h1> Question 3</h1>
-<p>You answered <img src="{{ three_your_answer }}"></p>
-<p>The correct answer is <img src="{{ three_correct_answer }}"></p>
+<p>"{{ three_tweet }}"</p>
+<p>You answered <br><img src="{{ three_your_answer }}"></p>
+<p>The correct answer is <br><img src="{{ three_correct_answer }}"></p>
+    </div>
+    <div class="block">
+
+<h1> Question 4</h1>
+<p>"{{ four_tweet }}"</p>
+<p>You answered <br><img src="{{ four_your_answer }}"></p>
+<p>The correct answer is <br><img src="{{ four_correct_answer }}"></p>
+    </div>
+
+
+
+    <div class="block">
+
+<h1> Question 5</h1>
+<p>"{{ five_tweet }}"</p>
+<p>You answered <br><img src="{{ five_your_answer }}"></p>
+<p>The correct answer is <br><img src="{{ five_correct_answer }}"></p>
+    </div>
+
+
+
+    <div class="block">
+
+<h1> Question 6</h1>
+<p>"{{ six_tweet }}"</p>
+<p>You answered <br><img src="{{ six_your_answer }}"></p>
+<p>The correct answer is <br><img src="{{ six_correct_answer }}"></p>
+    </div>
+
+
+    <div class="block">
+
+<h1> Question 7</h1>
+<p>"{{ seven_tweet }}"</p>
+<p>You answered <br><img src="{{ seven_your_answer }}"></p>
+<p>The correct answer is <br><img src="{{ seven_correct_answer }}"></p>
+    </div>
+
+
+    <div class="block">
+
+<h1> Question 8</h1>
+<p>"{{ eight_tweet }}"</p>
+<p>You answered <br><img src="{{ eight_your_answer }}"></p>
+<p>The correct answer is <br><img src="{{ eight_correct_answer }}"></p>
+    </div>
+
+
+    <div class="block">
+
+<h1> Question 9</h1>
+<p>"{{ nine_tweet }}"</p>
+<p>You answered <br><img src="{{ nine_your_answer }}"></p>
+<p>The correct answer is <br><img src="{{ nine_correct_answer }}"></p>
+    </div>
+
+
+
+    <div class="block">
+
+<h1> Question 10</h1>
+<p>"{{ ten_tweet }}"</p>
+<p>You answered <br><img src="{{ ten_your_answer }}"></p>
+<p>The correct answer is <br><img src="{{ ten_correct_answer }}"></p>
+    </div>
+
+
+
+
+
 </body>
 </html>

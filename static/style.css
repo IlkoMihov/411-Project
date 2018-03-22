@@ -1,28 +1,82 @@
-body{margin: 0;padding: 0;font-family:Helvetica Neue;background-color: #F5F8FA}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica Neue;
+    background-color: #F5F8FA;
+    text-align: center
+}
 
-nav {margin:0;padding:20px;height:100px;width:100%;background-color: #2FA4FF;}
+nav {
+    margin: 0;
+    padding: 40px 0px;
+    width: 100%;
+    background-color: #2FA4FF;
+}
 
-img {height:150px;}
+img {
+    height: 150px;
+}
 
-.index{background-color: #2FA4FF }
+.index {
+    background-color: #2FA4FF
+}
 
 nav a {
-    border:1px solid white;
+    border: 1px solid white;
     border-radius: 100px;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     padding: 10px 20px;
     text-align: center;
-    color:white;
+    color: white;
     text-decoration: none;
-    margin-top:30px;
+    margin-top: 30px;
 }
 
-.quiz-body {font-size:14px;text-align: center;border-radius:25px;}
+h1 {
+    text-align: center
+}
 
-table {background-color: white;margin:30px;padding:30px;}
+.quiz-body {
+    font-size: 14px;
+    text-align: center;
+    border-radius: 25px;
+}
 
-.quiz-body p{padding:30px;}
+.quiz-body p {
+    padding: 30px;
+}
 
-.choices {margin:auto;text-align: center;}
+.choices {
+    margin: auto;
+    text-align: center;
+}
+
+.block {
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    width: 75%;
+    margin: 30px auto;
+    border-radius: 30px
+}
+
+.button {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 35px;
+    padding: 10px 20px;
+    background-color: #2FA4FF;
+    color:white;
+}
+
+.submit {margin:30px;
+font-size:30px;
+    cursor: pointer;
+    border-radius: 40px;
+    padding: 20px 40px;
+    background-color: #2FA4FF;
+    color:white;
+
+}
