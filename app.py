@@ -87,7 +87,7 @@ def index():
                 select = random.choice(friends)
                 if select not in four_choices:
                     four_choices += [select]
-            # create a list of their usernames
+            # create a list gitof their usernames
             users = [person['username'] for person in four_choices]
             # create a list of their profile pcitres
             profile_pictures = [person['photo'] for person in four_choices]
