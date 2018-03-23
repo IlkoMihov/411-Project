@@ -40,7 +40,7 @@ def call_friends_list_api():
         url_with_cursor = api_path + "?cursor=" + str(cursor)
         response_dictionary = twitter.get(url_with_cursor).data
         if 'errors' in response_dictionary:
-            print(response_dictionary)
+            return render_template('error.html')
         cursor = response_dictionary['next_cursor']
         resp += [response_dictionary]
     return resp

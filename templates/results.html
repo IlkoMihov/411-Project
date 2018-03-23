@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel=stylesheet type=text/css href="{{ url_for('static',
-  filename='style.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 
 
     <nav>
@@ -13,10 +12,9 @@
 
 
 <body>
-
 <h1>You scored {{ number_of_correct_answers }} out of {{ number_of_questions }}.</h1>
 <h2>{{ results_msg }}</h2>
-<a href={{ url_for('index') }} class = 'try-again'> Try Again </a>
+<a href="{{ url_for('index') }}" class = 'button'> Try Again </a>
 
 
 <div class="block">
