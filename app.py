@@ -30,9 +30,19 @@ from flask.ext.cache import Cache
 cache = Cache(app, config={'CACHE_TYPE': 'simple'})
 
 # Call friends/list Twitter API and cache results
-@cache.cached(timeout=50, key_prefix='all_comments')
+@cache.cached(timeout=50, key_prefix='api_call')
 def call_friends_list_api():
-    resp = twitter.get('friends/list.json').data
+    # each api call gets the latest 20 following
+    cursor = -1
+    api_path = 'https://api.twitter.com/1.1/friends/list.json'
+    resp = []
+    for i in range(2):
+        url_with_cursor = api_path + "?cursor=" + str(cursor)
+        response_dictionary = twitter.get(url_with_cursor).data
+        if 'errors' in response_dictionary:
+            print(response_dictionary)
+        cursor = response_dictionary['next_cursor']
+        resp += [response_dictionary]
     return resp
 
 
@@ -55,9 +65,11 @@ def index():
     if g.user is not None:
         # call call_friends_list_api() function to get list of friends
         resp = call_friends_list_api()
-        # filter result to get username and photo only
-        friends = [{'username': user['screen_name'], 'photo': user['profile_image_url_https']} \
-                   for user in resp['users']]
+        friends = []
+        for obj in resp:
+            # filter result to get username and photo only
+            friends += [{'username': user['screen_name'], 'photo': user['profile_image_url_https']} \
+                       for user in obj['users']]
         # small edit needed on profile picture links in order to display image in html
         for friend in friends:
             if 'jpg' in friend['photo']:
