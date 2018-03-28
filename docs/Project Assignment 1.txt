@@ -1,0 +1,3 @@
+Updated idea:
+
+We plan to use Twitter third-party authentication to generate a "guess who Tweeted that quiz". The app will generate 10 random tweets, and with each tweet, it will give the user 3 random profile pictures to choose from. We will use the get friends/list API from Twitter to retrieve the user's friends list. The database will be used to act as a scoreboard for the quiz, storing the Twitter username and the user's score. For our second API, we will be using Spotify to obtain a song intelligently (the means for this is still being decided), and we will play a song for a user when they take the quiz.

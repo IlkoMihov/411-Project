@@ -45,13 +45,13 @@ def call_friends_list_api():
         resp += [response_dictionary]
     return resp
 
-
+#came with documentation code
 @twitter.tokengetter
 def get_twitter_token():
     if 'twitter_oauth' in session:
         resp = session['twitter_oauth']
         return resp['oauth_token'], resp['oauth_token_secret']
-
+#came with documentation code
 @app.before_request
 def before_request():
     g.user = None
@@ -71,11 +71,13 @@ def index():
             friends += [{'username': user['screen_name'], 'photo': user['profile_image_url_https']} \
                        for user in obj['users']]
         # small edit needed on profile picture links in order to display image in html
+
         for friend in friends:
             if 'jpg' in friend['photo']:
                 friend['photo']= friend['photo'][:-11] + '.jpg'
             elif 'jpeg' in friend['photo']:
                 friend['photo'] = friend['photo'][:-12] + '.jpeg'
+
 
         # provide user with 10 questions
         # the list "all_choices" will store 10 lists of four random users
@@ -99,6 +101,7 @@ def index():
                 select = random.choice(friends)
                 if select not in three_choices:
                     three_choices += [select]
+
             # create a list of their usernames
             users = [person['username'] for person in three_choices]
             # create a list of their profile pcitres

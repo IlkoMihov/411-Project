@@ -1,0 +1,1 @@
+We decided to use the framework Flask because we are all proficient in Python. Node was another option, but since we were more comfortable working with Python and that some of our members would have needed to learn JavaScript, we decided that choosing Node would be less ideal. 
